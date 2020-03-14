@@ -1,0 +1,267 @@
+/******************** GENERAL STYLES ********************/
+
+* {
+    box-sizing: border-box;
+}
+
+body, html{
+    margin: 0;
+    padding: 0;
+    font-size: 16px;
+    font-family: 'Lato';
+}
+
+
+/******************** TEST STYLES ********************/
+.container-test {
+    height: 900px;
+}
+
+.container-test-2{
+    height: 200px;
+}
+
+.log {
+    border: 1px solid green;
+    font-size: 1.5rem;
+    text-align: center;
+}
+
+.quit-margin{
+    margin: 0;
+}
+
+/******************** PARTIALS STYLES ********************/
+
+/********** NAVIGATION */
+
+.custom-nav img {
+    width: 200px;
+}
+
+.nav-items li:hover {
+    background-color: #b71c1c;
+}
+
+/********** FOOTER */
+
+.title-section-footer {
+    font-weight: bold;
+    font-size: 1.1em;
+}
+
+.datos-columna p{
+    margin: 5px 0;
+}
+
+.social-media {
+    display: flex;
+}
+
+.page-footer .footer-copyright {
+    padding: 0;
+}
+
+/******************** HOME PAGE ********************/
+
+.parallax-container {
+    width: 100%;
+    height: 90vh;
+}
+
+/********** Section We Services */
+.container-services-section {
+    padding: 20px 10px;
+}
+
+.container-cards-services{
+    color: white;
+    margin-bottom: 2.4rem;
+}
+
+/********** Section Slider Client */
+.title-section-clients-slider{
+    color: #b71c1c;
+    margin: 1.2rem;
+    text-align: center;
+    font-size: 2.28rem;
+}
+
+.container-slider{
+    height: auto;
+    overflow: hidden;
+    margin: 1.2rem 0;
+}
+
+.slider-clients{
+    display: flex;
+    justify-content: center;
+}
+
+.image-container{
+    margin: 1.2rem;
+}
+
+/* @keyframes rolls {
+    0% {transform: translateX(0);}
+    100%{transform: translateX(calc(-162px*2));}
+} */
+
+
+
+
+
+/******************** PRODUCTS PAGE ********************/
+
+
+.title-section {
+    color: #b71c1c;
+    font-weight: bold;
+    padding-top: 1.5rem;
+}
+
+.container-products{
+    display: flex;
+    width: 100%;
+    padding: 0.5rem;
+    flex-wrap: wrap;
+}
+
+.products-card{
+    flex: 1 200px;
+    margin: .8rem;
+}
+
+.products-card:hover {
+    transform: scale(1.1);
+    transition: ease-out .3s;
+}
+
+/********** Section Form */
+.title-form{
+    color: #b71c1c;
+    font-weight: bold;
+    padding-top: 1.5rem;
+    text-align: center;
+}
+
+.container-form{
+    margin-top: 1.5em;
+}
+
+.container-btn-form{
+    text-align: center;
+}
+
+.btn-form{
+    width: 40%;
+    margin: 0 auto;
+}
+
+.img-form{
+    width: 80%;
+}
+
+/******************** ABOUT PAGE ********************/
+
+.title-section-bussines {
+    color: #b71c1c;
+    font-weight: bold;
+    padding-bottom: 1.5rem;
+}
+
+.container-name-items {
+    padding: 0 !important;  /* not let*/
+}
+
+.container-name-items ul {
+    margin: 0;
+}
+
+.container-name-items ul li {
+    padding: 0.3rem;
+    border: 1px solid #b71c1c;
+}
+
+.container-name-items ul li:hover{
+    background-color: grey;
+}
+
+.container-name-items ul li a {
+    color: black;
+    width: 100%;
+}
+
+.description-values{
+    border: 1px solid #b71c1c;
+}
+
+
+
+
+/******************** CONTACT PAGE ********************/
+
+.contenedor-card{
+    margin-top: 40px;
+}
+
+.card .card-content{
+    padding: 20px;
+}
+
+.card .card-content h5{
+    margin: 2px;
+}
+
+.card .card-content span {
+    font-style: italic;
+}
+
+.contenedor-datos {
+    display: flex;
+}
+
+.contenedor-datos i {
+    margin-right: 10px;
+    color: #b71c1c;
+}
+
+.contenedor-datos span {
+    color: #b71c1c;
+    font-weight: bold;
+}
+
+.contenedor-datos p{
+    margin: 5px 0;
+}
+
+.iframe-maps{
+    width: 100%;
+    height: 450px;
+}
+
+
+/******************** LOGIN PAGE ********************/
+
+.testcontainer{
+background-color: #b71c1c;
+}
+
+.login-card-container{
+    max-width: 20rem;
+    padding: 1.8rem;
+    text-align: center;
+    margin: 7rem auto;
+}
+
+.login-card-container img {
+    width: 100%;
+}
+
+.login-button-container{
+    display: flex;
+    justify-content: space-around;
+    padding-top: 1.6rem;
+}
+
+

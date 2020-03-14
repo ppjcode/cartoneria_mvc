@@ -1,0 +1,30 @@
+nav
+  .nav-wrapper.custom-nav.white
+    //- .nav-wrapper.custom-nav.red.darken-4
+    a.brand-logo(href='/').brown-text
+      img(src="/img/logo_cartoneria.pngs", alt="Logotipo")
+    a.sidenav-trigger(href='#' data-target='mobile-demo')
+      i.material-icons.brown-text menu
+    ul.right.hide-on-med-and-down.nav-items
+      li
+        a(href='/').brown-text.item-nav Inicio
+      li
+        a(href='productos').brown-text Productos
+      li
+        a(href='nosotros').brown-text Nosotros
+      li
+        a(href='contacto').brown-text Contactenos
+      li
+        a(href='login').brown-text Login
+
+ul.sidenav#mobile-demo
+  li
+    a(href='/').black-text Inicio
+  li
+    a(href='productos').black-text Productos
+  li
+    a(href='nosotros').black-text Nosotros
+  li
+    a(href='contacto').black-text Contactenos
+  li
+    a(href='login').black-text Login 

@@ -1,0 +1,58 @@
+[
+    {
+        "id": "01",
+        "name": "Producto 01",
+        "description": "Este es el producto 01 y es muy bueno",
+        "image": "img/productos/producto01.png",
+        "stock": "20"
+    },
+    {
+        "id": "02",
+        "name": "Producto 02",
+        "description": "Este es el producto 02 y es muy bueno",
+        "image": "img/productos/producto02.png",
+        "stock": "20"
+    },
+    {
+        "id": "03",
+        "name": "Producto 03",
+        "description": "Este es el producto 03 y es muy bueno",
+        "image": "img/productos/producto03.png",
+        "stock": "20"
+    },
+    {
+        "id": "04",
+        "name": "Totalbeerpack para 1 botella con asa",
+        "description": "Este es el producto 04 y es muy bueno",
+        "image": "img/productos/producto04.png",
+        "stock": "20"
+    },
+    {
+        "id": "05",
+        "name": "Totalbeerpack para 1 botella con asa",
+        "description": "Este es el producto 05 y es muy bueno",
+        "image": "img/productos/producto05.png",
+        "stock": "20"
+    },
+    {
+        "id": "06",
+        "name": "Totalbeerpack para 1 botella con asa",
+        "description": "Este es el producto 06 y es muy bueno",
+        "image": "img/productos/producto06.png",
+        "stock": "20"
+    },
+    {
+        "id": "07",
+        "name": "Totalbeerpack para 1 botella con asa",
+        "description": "Este es el producto 07 y es muy bueno",
+        "image": "img/productos/producto07.png",
+        "stock": "20"
+    },
+    {
+        "id": "08",
+        "name": "Totalbeerpack para 1 botella con asa",
+        "description": "Este es el producto 08 y es muy bueno",
+        "image": "img/productos/producto08.png",
+        "stock": "20"
+    }
+]

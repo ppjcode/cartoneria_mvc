@@ -1,0 +1,26 @@
+{
+  "name": "cartoneria-allca",
+  "version": "0.0.1",
+  "description": "Página Web para Cartonería",
+  "main": "app.js",
+  "scripts": {
+    "start": "nodemon ./src/app.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@gitlab.com/soha-team/cartoneria.git"
+  },
+  "author": "ppjcode",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://gitlab.com/soha-team/cartoneria/issues"
+  },
+  "homepage": "https://gitlab.com/soha-team/cartoneria#readme",
+  "dependencies": {
+    "express": "^4.17.1",
+    "pug": "^2.0.4"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.2"
+  }
+}
