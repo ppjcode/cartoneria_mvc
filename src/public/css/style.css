@@ -37,6 +37,8 @@ body, html{
 
 .custom-nav img {
     width: 200px;
+    vertical-align: middle;
+    margin-left: .2em;
 }
 
 .nav-items li:hover {
@@ -158,8 +160,24 @@ body, html{
     margin: 0 auto;
 }
 
+.row-form{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.contact-img{
+    text-align: center;
+}
+
+.contact-img > h5{
+    color: #b71c1c;
+    text-align: center;
+}
+
 .img-form{
     width: 80%;
+    height: 100%;
 }
 
 /******************** ABOUT PAGE ********************/

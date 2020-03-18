@@ -1,35 +1,30 @@
+document.addEventListener('DOMContentLoaded', () => {
+  
+  // active nav mobile
+  let sidenav = document.querySelectorAll('.sidenav');
+  let instancesSidenav = M.Sidenav.init(sidenav);
 
-// nav mobile
-  document.addEventListener('DOMContentLoaded', function () {
-    var elems = document.querySelectorAll('.sidenav');
-    var instances = M.Sidenav.init(elems);
-  });
+  // images section bussines
+  let imageAbout = document.querySelectorAll('.materialboxed');
+  let instancesImageeAbout = M.Materialbox.init(imageAbout);
 
+  // parallax home
+  let parallax = document.querySelectorAll('.parallax');
+  var instancesParallax = M.Parallax.init(parallax);
+})
 
-
-// colapsible section bussines
-document.addEventListener('DOMContentLoaded', function () {
-    var elems = document.querySelectorAll('.collapsible');
-    var instances = M.Collapsible.init(elems);
-});
-
-// images section bussines
-document.addEventListener('DOMContentLoaded', function () {
-    var elems = document.querySelectorAll('.materialboxed');
-    var instances = M.Materialbox.init(elems);
-});
 
 // parallax
-document.addEventListener('DOMContentLoaded', function () {
-  var elems = document.querySelectorAll('.parallax');
-  var instances = M.Parallax.init(elems);
-});
+// document.addEventListener('DOMContentLoaded', function () {
+//   var elems = document.querySelectorAll('.parallax');
+//   var instances = M.Parallax.init(elems);
+// });
 
 // Modal Config
-document.addEventListener('DOMContentLoaded', function () {
-  var elems = document.querySelectorAll('.modal');
-  var instances = M.Modal.init(elems);
-});
+// document.addEventListener('DOMContentLoaded', function () {
+//   var elems = document.querySelectorAll('.modal');
+//   var instances = M.Modal.init(elems);
+// });
   
 
 // function to change img in slider

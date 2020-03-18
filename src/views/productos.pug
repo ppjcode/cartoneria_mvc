@@ -2,9 +2,7 @@ extends includes/layout.pug
 
 block content
     .container
-        .row
-            h5.center.title-section Nuestros Productos
-
+        h5.center.title-section Nuestros Productos
         .container-products    
             each i in products
                 .card.products-card#products
@@ -21,11 +19,8 @@ block content
                 .row
                     .col.m6
                         h5 Título del producto
-                        
-                        p 
-                        | Descripcion del producto
-                        p
-                        | Stock Disponible: Cantidad del producto
+                        p Descripcion del producto
+                        p Stock Disponible: Cantidad del producto
                     .col.m6
                         .card.small
                             img(src="img/productos/producto02.png" alt="").responsive-img.
@@ -40,11 +35,11 @@ block content
 
     .container
         .container-form
-            .row
-                .contact-img.col.s12.l6
-                    h5 Cotiza nuestros productos
-                    img(src="img/seller.png", alt="Imagen").img-form.log
-                .contact-form.col.s12.l6
+            .row.row-form
+                .contact-img.col.s12.l7
+                    //- h5 Cotiza nuestros productos
+                    img(src="img/seller.png", alt="Imagen").img-form
+                .contact-form.col.s12.l5
                     p.title-form FORMULARIO
                     .row
                       .input-field.col.s12
