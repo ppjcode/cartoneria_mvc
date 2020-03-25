@@ -3,36 +3,33 @@ extends includes/layout.pug
 block content
     .container
         h5.center.title-section Nuestros Productos
-        .container-products    
-            each i in products
+        .container-products#allProducts
+            each product in data
                 .card.products-card#products
                     .card-image
-                        img(src=i.image, alt="")
+                        img(src=product.img, alt="")
                     .card-content
-                        p= i.description
+                        p= product.name
                     .card-action
-                        a(href="#modal1")#clickmodal.blue-text.modal-trigger Ver mas
+                        button(data-target="modal1").btn.brown.modal-trigger Ver más
 
+    //- Modal structure
+    #modal1.modal
+        .modal-content
+                
+            .row
+                .col.m6
+                    h5= data[0].name
+                    p= data[0].description
+                    span Stock 
+                    span= data[0].stock
+                .col.m6
+                    .card
+                        img(src=`${data[0].img}` alt="").responsive-img.materialboxed
+        .modal-footer
+            a(href="#!").modal-close.wavees-effect.waves.brown.btn-flat.white-text Cerrar
 
-        #modal1.modal
-            .modal-content
-                .row
-                    .col.m6
-                        h5 Título del producto
-                        p Descripcion del producto
-                        p Stock Disponible: Cantidad del producto
-                    .col.m6
-                        .card.small
-                            img(src="img/productos/producto02.png" alt="").responsive-img.
-            .modal-footer
-                a(href="#!").modal-close.wavees-effect.waves.black.btn-flat.white-text Cerrar
-
-
-        
-
-
-
-
+    //- Form section
     .container
         .container-form
             .row.row-form
@@ -55,8 +52,3 @@ block content
                         label(for="email") Email
                     .row.container-btn-form
                       a(href="#").waves-effect.waves-light.btn.red.darken-4.btn-form Enviar
-
-
-
-
-

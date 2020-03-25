@@ -8,59 +8,95 @@ document.addEventListener('DOMContentLoaded', () => {
   let imageAbout = document.querySelectorAll('.materialboxed');
   let instancesImageeAbout = M.Materialbox.init(imageAbout);
 
-  // parallax home
-  let parallax = document.querySelectorAll('.parallax');
-  var instancesParallax = M.Parallax.init(parallax);
+  // carousel clients
+  var elems = document.querySelectorAll('.carousel');
+  var instances = M.Carousel.init(elems, {
+    dist    : 0,
+    duration: 100,
+    padding:  10
+  });
+
+
+  // jquery for slider
+  const autoplay = () => {
+    $('.carousel').carousel('next');
+    setTimeout(autoplay, 1500);
+  }
+  
+  autoplay()
+  
+
+// Modal section products
+  let modalProduct = document.querySelectorAll('.modal');
+  let instancesModal = M.Modal.init(modalProduct);
+
+
+
+// secction about
+  // const li1 = document.getElementById('li1')
+  // const li2 = document.getElementById('li2')
+  // const li3 = document.getElementById('li3')
+
+  // const description1 = document.getElementById('about-description1');
+  // const description2 = document.getElementById('about-description2');
+  // const description3 = document.getElementById('about-description3');
+
+  // li1.addEventListener('click',(e)=>{
+  //   e.preventDefault();
+  //   if (description1.classList == 'hide') {
+  //     description1.classList.remove('hide')
+  //     description2.classList.add('hide')
+  //     description3.classList.add('hide')
+
+  //   }
+  // })
+  
+  // li2.addEventListener('click', (e) => {
+  //   e.preventDefault();
+  //   if (description2.classList == 'hide') {
+  //   description2.classList.remove('hide')
+  //   description1.classList.add('hide')
+  //   description3.classList.add('hide')
+  //   }
+  // })
+  
+  // li3.addEventListener('click', (e) => {
+  //   e.preventDefault();
+  //   if (description3.classList == 'hide') {
+  //   description3.classList.remove('hide')
+  //   description1.classList.add('hide')
+  //   description2.classList.add('hide')
+  //   }
+  // })
+  
+
+
+// API Map Javascript
+var map;
+
+function initMap() {
+  map = new google.maps.Map(document.getElementById('map'), {
+    center: {
+      lat: -13.415115,
+      lng: -76.152967
+    },
+    zoom: 15
+  });
+}
+initMap()
+
+
+
+
+
+
+
+
+
 })
 
 
-// parallax
-// document.addEventListener('DOMContentLoaded', function () {
-//   var elems = document.querySelectorAll('.parallax');
-//   var instances = M.Parallax.init(elems);
-// });
-
-// Modal Config
-// document.addEventListener('DOMContentLoaded', function () {
-//   var elems = document.querySelectorAll('.modal');
-//   var instances = M.Modal.init(elems);
-// });
   
 
-// function to change img in slider
-// document.addEventListener('DOMContentLoaded', () => {
-
-//   const parallax = document.getElementById('parallax'),
-//         img = [
-//           'img/slider1.png',
-//           'img/slider2.png',
-//           'img/slider3.png'
-//         ]
-  
-//   let count = 0;
-  
-//   setInterval(() => {
-//     if (count < img.length) {
-//       count++;
-//       const imgTest = parallax.querySelector('img').src = `img/slider${count}.png`;
-//     }else{
-//       count = 0;
-//     }
-//   }, 2000);
-// })
 
 
-
-// function for change content of about section
-
-// const item = document.getElementById('about-item-list')
-
-// const itemList = item.querySelectorAll('li')
-// console.log(itemList[0]);
-
-// if (itemList[0] == 0) {
-//   console.log(`test`);
-  
-// }
-
-// js of formm in login

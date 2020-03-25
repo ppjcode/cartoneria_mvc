@@ -2,23 +2,26 @@ const express = require('express'),
       app = express(),
       path = require('path'),
       pug = require('pug'),
-      morgan = require('morgan');
-
+      morgan = require('morgan'),
+      mysql = require('mysql'),
+      myConnection = require('express-myconnection'),
+      { database } = require('./keys');
 
 // Setting
-app.set('port', 3000);
+app.set('port', process.env.PORT || 3000);
 app.set('views', path.join(__dirname,'views'));
 app.set('view engine', 'pug');
-app.use(express.json());
 
 // Middlewares
 app.use(morgan('dev'))
+app.use(myConnection(mysql, database,'single'));
 
 // Routes
-app.use(require('./routes/index.js'))
+app.use(require('./routes/routes.index.js'))
 
 // Static files
 app.use(express.static(path.join(__dirname, 'public')))
 
-// Setup server
-app.listen((process.env.PORT || app.get('port')), () => console.log('Server Running'));
+// Starting the server
+app.listen((app.get('port')), () => console.log('Server Running'));
+
