@@ -245,19 +245,22 @@ body, html{
 }
 
 .row-form{
-    display: flex;
     justify-content: center;
     align-items: center;
 }
 
 .contact-img{
     text-align: center;
+    height: 100%;
 }
 
-.contact-img > h5{
+.contact-img img {
+    height: 450px;
+}
+/* .contact-img > h5{
     color: #b71c1c;
     text-align: center;
-}
+} */
 
 .img-form{
     width: 80%;
@@ -280,9 +283,13 @@ body, html{
     margin: 0;
 }
 
+/* .container-name-items ul li:first-child {
+    background-color: grey;
+} */
+
 .container-name-items ul li {
     padding: 0.3rem;
-    border: 1px solid #b71c1c;
+    /* border: 1px solid #b71c1c; */
 }
 
 .container-name-items ul li:hover{
@@ -297,6 +304,11 @@ body, html{
 .description-values{
     border: 1px solid #b71c1c;
 }
+
+.fadeIn{
+    transition: opacity 400ms;
+}
+
 
 /******************** CONTACT PAGE ********************/
 
@@ -341,12 +353,12 @@ body, html{
 }
 
 /******************** LOGIN PAGE ********************/
-.testcontainer{
+/* .testcontainer{
 background-color: #b71c1c;
-}
+} */
 
 .login-card-container{
-    max-width: 20rem;
+    max-width: 25rem;
     padding: 1.8rem;
     text-align: center;
     margin: 7rem auto;

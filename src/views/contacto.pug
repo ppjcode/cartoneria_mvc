@@ -15,20 +15,22 @@ block content
                             div
                                 span Oficina Principal
                                 p Av. Principal Nº 260
-                                p C.P. San Pedro de Pilpa - Sunampe, Chincha
+                                p C.P. San Pedro de Pilpa - Sunampe
+                                p Chincha
                         .col.s12.m4.contenedor-datos.justify
                             div.contenedor-icono
                                 i.material-icons phone
                             div
                                 span Teléfonos
-                                p (056) 263 125)
-                                p 988 123 211
+                                p (056) 263 125
+                                p +51 988 123 211
                         .col.s12.m4.contenedor-datos.justify
                             div.contenedor-icono
                                 i.material-icons mail
                             div
                                 span Email
                                 p ventas@cartoneriafyl.com
+                                p info@cartoneriafyl.com
 
         .row
             .col.s12.m12.l7
@@ -39,16 +41,16 @@ block content
                         .form-title.center
                             h5 Envíenos un mensaje
                         .input-field.col.s12
-                            input(type="text")#nombre.validate
+                            input(type="text" required)#nombre.validate
                             label(for="nombre") Nombre
                         .input-field.col.s12
-                            input(type="email")#email.validate
+                            input(type="email" required)#email.validate
                             label(for="email") Email
                         .input-field.col.s12
-                            input(type="text")#asunto.validate
+                            input(type="text" required)#asunto.validate
                             label(for="asunto") Asunto
                         .input-field.col.s12
-                            textarea(name="mensaje", cols="30", rows="10")#mensaje.materialize-textarea
+                            textarea(name="mensaje", cols="30", rows="10" required)#mensaje.materialize-textarea
                             //- input(type="text")#asunto.validate
                             label(for="mensaje") Mensaje
                         .row.center    

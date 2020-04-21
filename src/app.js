@@ -15,6 +15,7 @@ app.set('view engine', 'pug');
 // Middlewares
 app.use(morgan('dev'))
 app.use(myConnection(mysql, database,'single'));
+app.use(express.urlencoded({extended: false}));
 
 // Routes
 app.use(require('./routes/routes.index.js'))
