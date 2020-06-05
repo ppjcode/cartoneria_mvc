@@ -10,7 +10,7 @@
     "type": "git",
     "url": "git+ssh://git@gitlab.com/soha-team/cartoneria.git"
   },
-  "author": "ppjcode",
+  "author": "@ppjcode",
   "license": "ISC",
   "bugs": {
     "url": "https://gitlab.com/soha-team/cartoneria/issues"
