@@ -3,38 +3,38 @@ extends includes/layout.pug
 block content
 
     .container
-        h5.center.title-section-bussines Nuestra experiencia es tu mejor garantía
+        h5.center.title-section-bussines.title-section Nuestra experiencia es tu mejor garantía
 
         .row
-            .bussines-photo-office.col.l8
+            .bussines-photo-office.col.s12.m12.l8
                 .row.container-section-values
-                    .col.l2.container-name-items
+                    .col.s3.m3.l2.container-name-items
                         ul#about-item-list
-                            li#li1
+                            li#li1.active
                                 a(href="#") Nosotros
                             li#li2
                                 a(href="#") Misión
                             li#li3
                                 a(href="#") Visión
-                    .col.l10.description-values  
+                    .col.s9.m9.l10.description-values  
                         p(data-collapsible)#about-description1 
-                            | 1 Quienes somos nosotros
+                            | Quienes somos nosotros
                             | Lorem ipsum dolor sit amet consectetur, adipisicing elit. Totam, nulla! 
                             | Lorem ipsum dolor sit, amet consectetur adipisicing elit. Accusamus laudantium eos odio!
                             | Lorem ipsum dolor sit, amet consectetur adipisicing elit. Accusamus laudantium eos odio! 
                             | Lorem ipsum dolor sit, amet consectetur adipisicing elit. Accusamus laudantium eos odio!
                         p(data-collapsible)#about-description2.hide 
-                            | 2 Nuestra mision
+                            | Nuestra mision
                             | Lorem ipsum dolor sit amet consectetur, adipisicing elit. Totam, nulla! 
                             | Lorem ipsum, dolor sit amet consectetur adipisicing elit.
                             | Lorem ipsum dolor sit, amet consectetur adipisicing elit. Accusamus laudantium eos odio! 
                             | Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptates enim eos pariatur sed.
                         p(data-collapsible)#about-description3.hide 
-                            | 3 Nuestra vision
+                            | Nuestra vision
                             | Lorem ipsum dolor sit amet consectetur, adipisicing elit. Totam, nulla! 
                             | Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia, quam nesciunt.
                             | Lorem ipsum dolor sit, amet consectetur adipisicing elit. Accusamus laudantium eos odio! 
                             | Lorem ipsum dolor sit amet consectetur, adipisicing elit. Tempore soluta voluptate accusantium reiciendis repellat.
 
-            .bussines-details.col.l4
-                img(src="/img/photo-aboutus.jpg", alt="imagen", width="320", height="300").materialboxed
+            .bussines-details.col.s12.m12.l4
+                img(src="/img/photo-aboutus.jpg", alt="imagen").materialboxed

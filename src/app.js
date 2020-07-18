@@ -24,5 +24,5 @@ app.use(require('./routes/routes.index.js'))
 app.use(express.static(path.join(__dirname, 'public')))
 
 // Starting the server
-app.listen((app.get('port')), () => console.log('Server Running in port'));
+app.listen((app.get('port')), () => console.log('Server Running'));
 

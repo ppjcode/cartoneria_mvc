@@ -5,27 +5,26 @@ block content
         h5.center.title-section Nuestros Productos
         .container-products#allProducts
             each product in data
-                .card.products-card#products
+                .card.products-card#product(data-id=product.id)
                     .card-image
                         img(src=product.img, alt="")
                     .card-content
                         p= product.name
                     .card-action
-                        button(data-target="modal1").btn.brown.modal-trigger Ver más
-
+                        button( name='modalProducts' data-id=product.id data-name=product.name data-description=product.description data-stock=product.stock data-img=product.img data-target="modal1").btn.brown.modal-trigger Ver más
+                
     //- Modal structure
     #modal1.modal
         .modal-content
-                
             .row
                 .col.m6
-                    h5= data[0].name
-                    p= data[0].description
+                    h5#modal-title
+                    p#modal-description
                     span Stock 
-                    span= data[0].stock
+                    span#modal-stock
                 .col.m6
                     .card
-                        img(src=`${data[0].img}` alt="").responsive-img.materialboxed
+                        img(alt="").responsive-img.materialboxed#modal-img
         .modal-footer
             a(href="#!").modal-close.wavees-effect.waves.brown.btn-flat.white-text Cerrar
 

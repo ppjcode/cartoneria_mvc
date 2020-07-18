@@ -1,9 +1,9 @@
 nav
   .nav-wrapper.custom-nav.white
     //- .nav-wrapper.custom-nav.red.darken-4
-    a.brand-logo(href='/')
+    a.brand-logo(href='/')#logo-normal
       img(src="/img/logo_cartoneria.png", alt="Logotipo")
-    a.sidenav-trigger(href='#' data-target='mobile-demo')
+    a.sidenav-trigger(href='#' data-target='mobile-demo')#menu-mobile
       i.material-icons.brown-text menu
     ul.right.hide-on-med-and-down.nav-items
       li
@@ -18,13 +18,16 @@ nav
         a(href='login') Login
 
 ul.sidenav#mobile-demo
-  li
+  li#logo-mobile
+    .brand-logo(href='/')
+      img(src="/img/logo_cartoneria.png", alt="Logotipo")
+  li.material-icons home
     a(href='/').black-text Inicio
-  li
+  li.material-icons business_center
     a(href='productos').black-text Productos
-  li
+  li.material-icons group
     a(href='nosotros').black-text Nosotros
-  li
+  li.material-icons mail
     a(href='contacto').black-text Contactenos
-  li
+  li.material-icons account_box
     a(href='login').black-text Login 
