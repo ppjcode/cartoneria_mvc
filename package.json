@@ -7,8 +7,7 @@
     "start": "nodemon ./src/app.js"
   },
   "repository": {
-    "type": "git",
-    "url": "git+ssh://git@gitlab.com/soha-team/cartoneria.git"
+
   },
   "author": "@ppjcode",
   "license": "ISC",
