@@ -19,13 +19,10 @@ router.get('/login', (req, res) => res.render('login'))
 
 router.post('/user/signup',(req, res) => {
     const {user, password } = req.body;
-
     req.getConnection((err, conn) => {
         conn.query('SELECT * FROM users', (err, users) => {
             if(err) res.json(err)
-            
             const userDB = users[0]
-
             if (userDB.user === user && userDB.password === password) {
                 res.render('user/signup', {usuario: userDB.user})
             }else{
@@ -34,6 +31,5 @@ router.post('/user/signup',(req, res) => {
         })
     })
 })
-
 
 module.exports = router;
